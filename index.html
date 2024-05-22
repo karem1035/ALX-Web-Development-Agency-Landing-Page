@@ -12,7 +12,7 @@
       src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
       defer
     ></script>
-    <title>Bootstrap Sass &amp; JS</title>
+    <title>Agency Landing Page</title>
   </head>
   <body>
     <!-- NavBar -->
@@ -21,7 +21,7 @@
         <img
           src="/images/dark.svg"
           alt="Logo"
-          height="30"
+          width="200"
           class="d-inline-block align-text-topnavbar-brand"
         />
         <button class="btn btn-info px-3 rounded-0" type="submit">
@@ -138,5 +138,49 @@
         </div>
       </div>
     </div>
+    <!-- Project Overview -->
+    <div class="bg-body-tertiary p-5">
+      <!-- Container -->
+      <div class="container mx-auto d-flex flex-column">
+        <!-- Text -->
+        <div
+          class="d-flex flex-column justify-content-center align-content-center text-center"
+        >
+          <p class="fs-3 fw-bold text-center my-4">
+            What is the main Idea of the Project?
+          </p>
+          <p class="fs-5 fw-light">
+            To create a web development agency that brings together skilled
+            professionals with diverse expertise in web development. Our goal is
+            to cover all aspects of web development, from frontend and backend
+            to UX/UI design and SEO, ensuring we provide comprehensive,
+            high-quality solutions that meet any client's needs.
+          </p>
+        </div>
+        <!-- Image -->
+      </div>
+    </div>
+    <!-- Footer -->
+    <footer
+      class="p-3 p-lg-4 d-flex flex-column align-items-center justify-content-center"
+    >
+      <img src="images/light.svg" width="200" class="" alt="" />
+
+      <!-- Form -->
+      <form
+        class="text-white d-flex align-items-center justify-content-center m-4 gap-3"
+      >
+        <input
+          type="email"
+          class="form-control rounded-0"
+          id="exampleInputEmail1"
+          aria-describedby="emailHelp"
+          placeholder="Enter Your Email Address"
+        />
+
+        <button type="submit" class="btn btn-info rounded-0">Submit</button>
+      </form>
+      <p class="text-white">Copyright &copy; 2024 All right reserved</p>
+    </footer>
   </body>
 </html>

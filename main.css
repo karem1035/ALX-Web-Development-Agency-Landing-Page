@@ -1,4 +1,8 @@
-@media (max-width: 763px) {
+footer {
+  background-color: #020d13;
+}
+
+@media (max-width: 943px) {
   .w-full {
     width: 100% !important;
   }
