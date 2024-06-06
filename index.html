@@ -3,6 +3,11 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css"
+      rel="stylesheet"
+    />
+
     <link rel="stylesheet" href="./bootstrap.min.css" />
     <link rel="stylesheet" href="main.css" />
     <script src="bootstrap.bundle.min.js" defer></script>
@@ -10,32 +15,53 @@
   </head>
   <body>
     <!-- NavBar -->
-    <nav class="navbar p-3 navbar-expand-lg bg-body-tertiary shadow-sm">
+    <nav
+      class="navbar px-2 navbar-expand-lg bg-body-tertiary shadow-sm sticky-top"
+    >
       <div class="container">
-        <img
-          src="/images/dark.svg"
-          alt="Logo"
-          width="200"
-          class="d-inline-block align-text-topnavbar-brand"
-        />
-        <a class="btn btn-info px-3 rounded-0" type="submit" href="#contact">
-          Contact Us
+        <a class="navbar-brand" href="#">
+          <img
+            src="/images/dark.svg"
+            alt="Logo"
+            width="200"
+            class="d-inline-block align-text-top"
+          />
         </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav ms-auto">
+            <a class="nav-link me-3 text-black" href="#hero">Intro</a>
+            <a class="nav-link me-3 text-black" href="#features">Features</a>
+            <a class="nav-link me-3 text-black" href="#">About</a>
+            <a class="btn btn-info rounded-0 px-4" href="#">Live Demo</a>
+          </div>
+        </div>
       </div>
     </nav>
     <!-- Hero Section -->
-    <div class="bg-body-tertiary">
+    <div class="bg-body-tertiary" id="hero">
       <div
         class="d-flex flex-column flex-lg-row py-5 container align-items-center justify-content-around"
       >
         <!-- Text -->
         <div class="mb-4 text-center text-lg-start">
-          <p class="fs-1 fw-bold">Web Developement Agency</p>
+          <p class="fs-1 fw-bold">Building Digital Teams for Tomorrow</p>
           <p class="fs-4 fw-light">
-            We are a team of dedicated ALX students with a vision to deliver
-            high-quality digital solutions. By collaborating with experienced
-            professionals, we bring innovative ideas to life. Let's work
-            together to create impactful web projects that stand out.
+            We are developing a revolutionary system designed to connect and
+            create digital teams ready to tackle big projects. Our marketing
+            website will serve as our portfolio, showcasing our expertise and
+            the innovative solutions we deliver. Join us on this journey and see
+            how we bring together top talent and groundbreaking ideas.
           </p>
         </div>
         <!-- Image -->
@@ -43,96 +69,65 @@
       </div>
     </div>
     <!-- Project Features -->
-    <div class="container my-5">
-      <p class="fs-3 fw-bold text-center my-4">Our Project Features</p>
-      <div class="accordion mx-auto w-75 w-full" id="accordionExample">
-        <div class="accordion-item">
-          <h2 class="accordion-header">
-            <button
-              class="accordion-button"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#collapseOne"
-              aria-expanded="true"
-              aria-controls="collapseOne"
-            >
-              The Website
-            </button>
-          </h2>
-          <div
-            id="collapseOne"
-            class="accordion-collapse collapse show"
-            data-bs-parent="#accordionExample"
-          >
-            <div class="accordion-body">
-              <strong>Our agency website</strong> will feature a dynamic Blog,
-              detailed Services and Packages, a showcase of our work in the
-              Portfolio, and a transparent overview of our Process. You'll find
-              our Contact Information easily accessible, a comprehensive FAQ
-              section, strategic Call to Action (CTA) buttons, and a convenient
-              Request Meeting Form for scheduling consultations. This site will
-              be your go-to resource for connecting with us and exploring our
-              services.
-            </div>
+    <div class="container my-5" id="features">
+      <p class="fs-2 fw-bold text-center my-5">Features</p>
+      <!-- Feature 1 -->
+      <div class="row d-flex mb-5">
+        <!-- Text -->
+        <div class="col-md-6 d-flex align-items-center mb-3 mb-md-0">
+          <div>
+            <p class="fs-4 fw-bold text-center mb-4">A website acts as both</p>
+            <ul class="fs-5">
+              <li class="mb-4">
+                Portfolio showcasing our expertise and a contact center for new
+                clients and team members.
+              </li>
+              <li>
+                Clients can explore our past projects, check our blog, learn
+                about our capabilities, and get in touch with us for their next
+                big idea. Meanwhile, team members can easily find resources and
+                communicate with us.
+              </li>
+            </ul>
           </div>
         </div>
-        <div class="accordion-item">
-          <h2 class="accordion-header">
-            <button
-              class="accordion-button collapsed"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#collapseTwo"
-              aria-expanded="false"
-              aria-controls="collapseTwo"
-            >
-              The Database
-            </button>
-          </h2>
-          <div
-            id="collapseTwo"
-            class="accordion-collapse collapse"
-            data-bs-parent="#accordionExample"
-          >
-            <div class="accordion-body">
-              <strong>A MySQL database. </strong> It will store clients' data
-              collected from forms, details about our team members, and a
-              calendar to track project timelines and meeting arrangements. This
-              centralized database will ensure efficient management and seamless
-              communication across all aspects of our projects.
-            </div>
+        <!-- Image -->
+        <div class="col-md-6 order-md-first">
+          <div class="text-center">
+            <img src="images/webstie-screenshot.jpg" alt="" class="img-fluid" />
           </div>
         </div>
-        <div class="accordion-item">
-          <h2 class="accordion-header">
-            <button
-              class="accordion-button collapsed"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#collapseThree"
-              aria-expanded="false"
-              aria-controls="collapseThree"
-            >
-              The API
-            </button>
-          </h2>
-          <div
-            id="collapseThree"
-            class="accordion-collapse collapse"
-            data-bs-parent="#accordionExample"
-          >
-            <div class="accordion-body">
-              <strong>Python Flask API based on our database.</strong> By
-              leveraging Flask's flexibility, our API will provide secure and
-              efficient endpoints to facilitate communication and data exchange
-              between our web application and database, ensuring smooth and
-              streamlined operations.
-            </div>
+      </div>
+      <!-- Feature 2 -->
+      <div class="row d-flex">
+        <!-- Text -->
+        <div
+          class="col-md-6 d-flex align-items-center mb-3 mb-md-0 order-md-first"
+        >
+          <div>
+            <p class="fs-4 fw-bold text-center mb-4">A Database System</p>
+            <ul class="fs-5">
+              <li class="mb-4">
+                We will have a database system for clients, team members,
+                projects, and meetings.
+              </li>
+              <li>
+                It helps us manage everything smoothly, making it easier for us
+                to serve both clients and team members to work together
+                effectively, and achieve their goals.
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- Image -->
+        <div class="col-md-6">
+          <div class="text-center">
+            <img src="images/database.jpg" alt="" class="img-fluid" />
           </div>
         </div>
       </div>
     </div>
-    <!-- Project Overview -->
+    <!-- About Us -->
     <div class="bg-body-tertiary p-5">
       <!-- Container -->
       <div class="container mx-auto d-flex flex-column">
@@ -140,15 +135,139 @@
         <div
           class="d-flex flex-column justify-content-center align-content-center text-center"
         >
-          <p class="fs-3 fw-bold text-center my-4">
-            What is the main Idea of the Project?
+          <p class="fs-3 fw-bold text-center mb-5">
+            What are the problems that our porject fixes?
           </p>
-          <p class="fs-5 fw-light">
-            To create a web development agency that brings together skilled
-            professionals with diverse expertise in web development. Our goal is
-            to cover all aspects of web development, from frontend and backend
-            to UX/UI design and SEO, ensuring we provide comprehensive,
-            high-quality solutions that meet any client's needs.
+          <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button fs-5"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseOne"
+                  aria-expanded="true"
+                  aria-controls="collapseOne"
+                >
+                  Clients with a project of any size?
+                </button>
+              </h2>
+              <div
+                id="collapseOne"
+                class="accordion-collapse collapse show"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  We'll have a variety of talents that
+                  <strong>complement one another</strong>, equipped to handle
+                  every aspect of your project, regardless of its size. We
+                  ensure that these talents are not only skilled and hardworking
+                  but also available and dedicated to the projects assigned to
+                  them.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed fs-5"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseTwo"
+                  aria-expanded="false"
+                  aria-controls="collapseTwo"
+                >
+                  Freshers/Juniors or even seniors need to experience new
+                  real-world challenges?
+                </button>
+              </h2>
+              <div
+                id="collapseTwo"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  We'll <strong>constantly engage</strong> in projects, whether
+                  they're client-based, personal endeavors, or open-source
+                  initiatives. This hands-on approach allows us to refine our
+                  <strong
+                    >teamwork skills, adopt best practices, and gain valuable
+                    real-world experience</strong
+                  >, enhancing each individual's portfolio. overflow.
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Team members -->
+          <p class="fs-3 fw-bold text-center my-5">Our Team</p>
+          <div
+            class="d-flex flex-column flex-md-row justify-content-center align-items-center gap-5"
+          >
+            <!-- Card 1 -->
+            <div class="card w-full" style="width: 18rem">
+              <img src="images/mike.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">Mike Shambel</h5>
+                <p class="card-text">Software Engineer, ALX SE C19</p>
+                <p class="card-text fw-bold">Project Founder</p>
+                <div
+                  class="d-flex justify-content-center align-items-center gap-3 fs-4"
+                >
+                  <!-- linkedIn -->
+                  <a
+                    href="https://www.linkedin.com/in/michael-shambel-718537229/"
+                    target="_blank"
+                  >
+                    <i class="bi bi-linkedin text-black"></i>
+                  </a>
+                  <!-- GitHub -->
+                  <a href="https://github.com/Michael-shambel" target="_blank">
+                    <i class="bi bi-github text-black"></i>
+                  </a>
+                  <!-- Twitter -->
+                  <a href="https://x.com/michael_shambel" target="_blank">
+                    <i class="bi bi-twitter text-black"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!-- Card 2 -->
+            <div class="card w-full" style="width: 18rem">
+              <img src="images/karem.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">Karem Darwesh</h5>
+                <p class="card-text">Software Engineer, ALX SE C19</p>
+                <p class="card-text fw-bold">Project Founder</p>
+                <div
+                  class="d-flex justify-content-center align-items-center gap-3 fs-4"
+                >
+                  <!-- linkedIn -->
+                  <a
+                    href="https://www.linkedin.com/in/karem1035/"
+                    target="_blank"
+                  >
+                    <i class="bi bi-linkedin text-black"></i>
+                  </a>
+                  <!-- GitHub -->
+                  <a href="https://github.com/karem1035" target="_blank">
+                    <i class="bi bi-github text-black"></i>
+                  </a>
+                  <!-- Twitter -->
+                  <a href="https://x.com/KarremDarwesh" target="_blank">
+                    <i class="bi bi-twitter text-black"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project Repo -->
+          <p class="fs-3 fw-bold text-center my-5">
+            Check Our project Reopsitory on Github
+
+            <a href="https://github.com/karem1035/Nile-Agency" target="_blank" class="text-decoration-none text-primary">
+              <i class="bi bi-github"></i> Click Here
+            </a>
           </p>
         </div>
         <!-- Image -->
